@@ -1,113 +1,136 @@
-import Image from 'next/image'
+"use client"
 
+import React, { useRef } from 'react'; 
+import './globals.css';
+import 'animate.css';
 export default function Home() {
+
+  
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+  <div className="div">
+    <div className="menuBar">
+    <a href="#section1" className="menuIcon1 icon"><span className="material-symbols-outlined">person</span></a>
+    <a href="#section2" className="menuIcon2 icon"><span className="material-symbols-outlined">info</span></a>
+    <a href="#section3" className="menuIcon3 icon"><span className="material-symbols-outlined">linked_services</span></a>
+    <a href="#section4" className="menuIcon4 icon"><span className="material-symbols-outlined">settings</span></a>
+    <a href="#section5" className="menuIcon5 icon"><span className="material-symbols-outlined">contact_support</span></a>
+    </div>
+        <div className="container">
+            <a data-scroll href="#full"><div className="arrow"></div></a>
         </div>
-      </div>
+        <section id='section1' className="section1">
+            <div className="screen" style={{ backgroundColor: "rgba(198, 184, 253, 0.698)" }}>  
+                <div className="sec1-block" >
+                    <div className="block1">
+                        <div>
+                            <h1>Hani</h1>
+                            <h1>Chihabi.</h1>                          
+                        </div>
+                        </div>
+                        <div className="block2">
+                            <h1>Software</h1>
+                            <h1>Engineering.</h1>
+                            {/* <h1>Hello, my name is Hani Chihabi.</h1>
+                            <h1>I'm looking for new cool</h1>   
+                            <h1>Job opportunities</h1>
+                            <h1>as a junior software engineer,</h1> */}
+                        </div>
+                        
+                        
+                    
+                </div>  
+            </div>   
+    </section>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+    <section id='section2'  className="section2">
+        <div className="screen" style={{backgroundColor: "rgba(251, 170, 186, 0.698)"}}>
+            <div className="slides"> 
+                <div id="slide-1">
+                    <div className="sec2-block">
+                        <div className="sec2-block1">
+                                <h2>About.</h2>  
+                        </div>
+                        <div className="sec2-block2" >
+                            <span>&#8605;</span>   
+                        </div> 
+                    </div>                
+                </div>
+                <div id="slide-2">                    
+                    <div className="intro-texts">
+                        <h3>Hey There,</h3>
+                        <h1>My name is Hani and I am an upcoming software engineer!</h1>
+                        <br />
+                        <h2>Nice to meet you!</h2>                        
+                    </div>                
+                </div> 
+                <div id="slide-3">
+                
+                </div>
+                <div id="slide-4">
+                
+                </div>
+                <div id="slide-5">
+                
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+    <section id='section3' className="section3">     
+        <div className="screen" style={{backgroundColor: "rgba(228, 243, 113, 0.698)"}}>
+            <div className="sec3-block">
+                <div className="service1">
+                    <h1>Web Development</h1>
+                    <p>
+                        
+                    </p>
+                </div>
+                <div className="service2">
+                    <h1>Custom Software Development</h1>
+                    <p>
+                        
+                    </p>
+                </div>
+                <div className="service3">
+                    <h1>Mobile Application Development</h1>
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+        </div>        
+    </section>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
-}
+
+
+    <section id='section4' className="section4">
+        <div className="screen" style={{backgroundColor: "turquoise"}}>
+            <div className="sec4-block">
+
+            </div>
+            
+        </div>
+    </section>
+
+
+
+    <section id='section5'  className="section5">
+        <div className="screen" style={{backgroundColor: "rgba(254, 218, 122, 0.698)"}}> 
+            <div className="sec5-block">
+                            <div className="github">
+                                <h1>GitHub</h1>
+                            </div>
+                            <div className="gmail">
+                                <h1>Gmail</h1>
+                            </div>
+                            <div className="linkedin">
+                                <h1>LinkedIn</h1>
+                            </div>
+            </div>
+        </div>       
+    </section>    
+    
+</div>
+  )}
