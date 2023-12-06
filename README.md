@@ -1,11 +1,3 @@
-
-ChatGPT
-Certainly! Here's a README file for your project, written in Markdown (README.md) syntax:
-
-markdown
-Copy code
-# Hani Chihabi's Portfolio Website
-
 Welcome to the repository of my personal portfolio website. This project showcases my skills and projects as a Junior Software Engineer.
 
 ## Features
